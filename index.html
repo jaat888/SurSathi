@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SurSathi - Download App</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #121212, #2d2d44);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: center;
+        }
+        .container {
+            max-width: 600px;
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        h1 {
+            font-size: 3.5em;
+            margin-bottom: 10px;
+            color: #00e5ff;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        p {
+            font-size: 1.2em;
+            margin-bottom: 40px;
+            color: #b3b3b3;
+        }
+        .download-btn {
+            display: inline-block;
+            background: #00e5ff;
+            color: #121212;
+            padding: 16px 40px;
+            font-size: 1.4em;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+        }
+        .download-btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 25px rgba(0, 229, 255, 0.4);
+            background: #00c4db;
+        }
+        .features {
+            margin-top: 40px;
+            text-align: left;
+            background: rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            border-radius: 15px;
+        }
+        .features h3 {
+            margin-top: 0;
+            color: #00e5ff;
+        }
+        .features ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        .features li {
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+        .features li::before {
+            content: '✔️';
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>SurSathi</h1>
+        <p>Aapka trusted aur fast application. Download the latest version now!</p>
+        
+        <!-- Yahan aapka direct APK link laga hua hai -->
+        <a href="https://github.com/jaat888/SurSathi/releases/download/v1.0.0/sursathi-release.apk" class="download-btn">
+            📥 Download APK (v1.0.0)
+        </a>
+
+        <div class="features">
+            <h3>Key Features:</h3>
+            <ul>
+                <li>100% Free & Secure</li>
+                <li>Fast and smooth performance</li>
+                <li>Easy to use interface</li>
+                <li>Latest v1.0.0 Update</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
+
