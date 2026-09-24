@@ -3,104 +3,190 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SurSathi - Download App</title>
+    
+    <!-- === GOOGLE SEO SETTINGS === -->
+    <title>SurSathi - Download Official App</title>
+    <meta name="description" content="SurSathi (Sur Sathi) official app download karein. Fast, secure, aur best experience ke liye aaj hi download karein.">
+    <meta name="keywords" content="SurSathi, Sur Sathi, Sursathi app, download Sursathi, Sur Sathi apk">
+    <meta name="author" content="SurSathi Team">
+
+    <!-- === GOOGLE FONTS === -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+    <!-- === PREMIUM CSS DESIGN === -->
     <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        * {
             margin: 0;
             padding: 0;
-            background: linear-gradient(135deg, #121212, #2d2d44);
-            color: white;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #0f172a 0%, #1e1e2f 100%);
+            color: #ffffff;
+            min-height: 100vh;
             display: flex;
             flex-direction: column;
+            overflow-x: hidden;
+        }
+
+        /* Navbar */
+        .navbar {
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
             align-items: center;
-            justify-content: center;
-            min-height: 100vh;
-            text-align: center;
-        }
-        .container {
-            max-width: 600px;
-            padding: 40px;
             background: rgba(255, 255, 255, 0.05);
-            border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
             backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
         }
-        h1 {
-            font-size: 3.5em;
-            margin-bottom: 10px;
-            color: #00e5ff;
-            text-transform: uppercase;
-            letter-spacing: 2px;
+        .logo {
+            font-size: 28px;
+            font-weight: 800;
+            background: linear-gradient(90deg, #00f2fe 0%, #4facfe 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            letter-spacing: 1px;
         }
-        p {
-            font-size: 1.2em;
+
+        /* Hero Section */
+        .hero {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 60px 20px;
+        }
+        .hero h1 {
+            font-size: 50px;
+            font-weight: 800;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+        .hero h1 span {
+            color: #00f2fe;
+        }
+        .hero p {
+            font-size: 18px;
+            color: #a0aec0;
+            max-width: 600px;
             margin-bottom: 40px;
-            color: #b3b3b3;
+            line-height: 1.6;
         }
+
+        /* Glowing Download Button */
         .download-btn {
-            display: inline-block;
-            background: #00e5ff;
-            color: #121212;
-            padding: 16px 40px;
-            font-size: 1.4em;
-            font-weight: bold;
+            background: linear-gradient(90deg, #00f2fe 0%, #4facfe 100%);
+            color: #ffffff;
             text-decoration: none;
+            padding: 18px 45px;
+            font-size: 20px;
+            font-weight: 600;
             border-radius: 50px;
             transition: all 0.3s ease;
+            box-shadow: 0 10px 25px rgba(0, 242, 254, 0.4);
+            animation: pulse 2s infinite;
         }
         .download-btn:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 25px rgba(0, 229, 255, 0.4);
-            background: #00c4db;
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 15px 30px rgba(0, 242, 254, 0.6);
         }
+
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(0, 242, 254, 0.7); }
+            70% { box-shadow: 0 0 0 15px rgba(0, 242, 254, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(0, 242, 254, 0); }
+        }
+
+        /* Features Section */
         .features {
-            margin-top: 40px;
-            text-align: left;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 50px 20px;
+            flex-wrap: wrap;
             background: rgba(0, 0, 0, 0.2);
+        }
+        .feature-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            padding: 30px;
+            border-radius: 20px;
+            width: 280px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .feature-card:hover {
+            transform: translateY(-10px);
+            background: rgba(255, 255, 255, 0.08);
+        }
+        .feature-card h3 {
+            font-size: 22px;
+            color: #ffffff;
+            margin-bottom: 15px;
+        }
+        .feature-card p {
+            font-size: 14px;
+            color: #8a94a6;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
             padding: 20px;
-            border-radius: 15px;
+            color: #4a5568;
+            font-size: 14px;
+            background: #0b1121;
         }
-        .features h3 {
-            margin-top: 0;
-            color: #00e5ff;
-        }
-        .features ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-        }
-        .features li {
-            margin-bottom: 10px;
-            font-size: 1.1em;
-        }
-        .features li::before {
-            content: '✔️';
-            margin-right: 10px;
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 38px; }
+            .navbar { padding: 20px; justify-content: center; }
+            .features { gap: 20px; }
+            .feature-card { width: 100%; max-width: 350px; }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>SurSathi</h1>
-        <p>Aapka trusted aur fast application. Download the latest version now!</p>
-        
-        <!-- Yahan aapka direct APK link laga hua hai -->
-        <a href="https://github.com/jaat888/SurSathi/releases/download/v1.0.0/sursathi-release.apk" class="download-btn">
-            📥 Download APK (v1.0.0)
-        </a>
 
-        <div class="features">
-            <h3>Key Features:</h3>
-            <ul>
-                <li>100% Free & Secure</li>
-                <li>Fast and smooth performance</li>
-                <li>Easy to use interface</li>
-                <li>Latest v1.0.0 Update</li>
-            </ul>
+    <!-- Top Navigation -->
+    <nav class="navbar">
+        <div class="logo">SurSathi</div>
+    </nav>
+
+    <!-- Main Hero Section -->
+    <header class="hero">
+        <h1>Welcome to <span>SurSathi</span></h1>
+        <p>The ultimate app for your daily needs. Experience fast performance, beautiful design, and top-notch security all in one place. Download now and join the community!</p>
+        
+        <!-- YAHAN MAINE GITHUB RELEASES KA LINK LAGA DIYA HAI -->
+        <a href="https://github.com/jaat888/SurSathi/releases/latest" class="download-btn" target="_blank">Download Now (APK)</a>
+    </header>
+
+    <!-- App Features Section -->
+    <section class="features">
+        <div class="feature-card">
+            <h3>⚡ Super Fast</h3>
+            <p>Lag-free experience with optimized performance for all Android devices.</p>
         </div>
-    </div>
+        <div class="feature-card">
+            <h3>🛡️ 100% Secure</h3>
+            <p>Your data is completely safe and encrypted. We respect your privacy.</p>
+        </div>
+        <div class="feature-card">
+            <h3>✨ Easy to Use</h3>
+            <p>Simple, clean, and user-friendly interface that anyone can understand.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2026 SurSathi Official. All Rights Reserved.
+    </footer>
+
 </body>
 </html>
-
